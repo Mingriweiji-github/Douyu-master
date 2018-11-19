@@ -20,6 +20,11 @@
 		A62D6F9A21A28AF0005666EF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62D6F9921A28AF0005666EF /* Live.storyboard */; };
 		A62D6F9C21A28B4B005666EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6F9B21A28B4B005666EF /* ProfileViewController.swift */; };
 		A62D6F9E21A28B54005666EF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62D6F9D21A28B54005666EF /* Profile.storyboard */; };
+		A62D6FA121A294CD005666EF /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6FA021A294CD005666EF /* UIBarButtonItem-Extension.swift */; };
+		A62D6FA321A2981B005666EF /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6FA221A2981B005666EF /* PageTitleView.swift */; };
+		A62D6FA521A29C6E005666EF /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6FA421A29C6E005666EF /* UIColor-Extension.swift */; };
+		A62D6FA721A2A05C005666EF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6FA621A2A05C005666EF /* Common.swift */; };
+		A62D6FA921A2A7B6005666EF /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D6FA821A2A7B6005666EF /* PageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		A62D6F9921A28AF0005666EF /* Live.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		A62D6F9B21A28B4B005666EF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A62D6F9D21A28B54005666EF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A62D6FA021A294CD005666EF /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		A62D6FA221A2981B005666EF /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		A62D6FA421A29C6E005666EF /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		A62D6FA621A2A05C005666EF /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A62D6FA821A2A7B6005666EF /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +175,8 @@
 		A62D6F6F21A28867005666EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A62D6FA221A2981B005666EF /* PageTitleView.swift */,
+				A62D6FA821A2A7B6005666EF /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,8 +392,19 @@
 		A62D6F8A21A28867005666EF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A62D6F9F21A294B2005666EF /* extensions */,
+				A62D6FA621A2A05C005666EF /* Common.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		A62D6F9F21A294B2005666EF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A62D6FA021A294CD005666EF /* UIBarButtonItem-Extension.swift */,
+				A62D6FA421A29C6E005666EF /* UIColor-Extension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,12 +482,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62D6FA321A2981B005666EF /* PageTitleView.swift in Sources */,
 				A62D6F9C21A28B4B005666EF /* ProfileViewController.swift in Sources */,
+				A62D6FA921A2A7B6005666EF /* PageContentView.swift in Sources */,
 				A62D6F8C21A288BF005666EF /* MainTabBarController.swift in Sources */,
 				A62D6F5321A26A78005666EF /* AppDelegate.swift in Sources */,
+				A62D6FA521A29C6E005666EF /* UIColor-Extension.swift in Sources */,
 				A62D6F8F21A289D8005666EF /* HomeViewController.swift in Sources */,
 				A62D6F9421A28A8F005666EF /* FollowViewController.swift in Sources */,
 				A62D6F9821A28AE7005666EF /* LiveViewController.swift in Sources */,
+				A62D6FA721A2A05C005666EF /* Common.swift in Sources */,
+				A62D6FA121A294CD005666EF /* UIBarButtonItem-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

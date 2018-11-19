@@ -20,7 +20,7 @@ class MainTabBarController: UITabBarController {
     }
     
     private func addChildVCs(storyName: String) {
-//        guard let vc = UIStoryboard(name: storyName, bundle: nil).instantiateInitialViewController() else { return }
+
         let vc = UIStoryboard(name: storyName, bundle: nil).instantiateInitialViewController()!
         
         addChildViewController(vc)
