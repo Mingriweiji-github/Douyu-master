@@ -7,12 +7,19 @@
 //
 
 import UIKit
+protocol PageContentViewDelegate {
+    func pageContentView(_ contentView : PageContentView, progress : CGFloat, sourceIndex : Int, targetIndex : Int)
+}
+
 private let kCollectionNormalID = "kCollectionNormalID"
 class PageContentView: UIView {
 
-    var childrens = [UIViewController]()
+    fileprivate var childrens = [UIViewController]()
     
-    var parentVC: UIViewController?
+    fileprivate var parentVC: UIViewController?
+    fileprivate var isForbidScrollDelegate: Bool = false
+    
+    var delegate: PageContentViewDelegate?
     
     lazy var collectionView: UICollectionView = {[weak self] in
         let layout = UICollectionViewFlowLayout()
@@ -68,5 +75,10 @@ extension PageContentView: UICollectionViewDataSource {
 }
 //UICollectinViewDelegate
 extension PageContentView: UICollectionViewDelegate {
-    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+    }
 }
